@@ -1,0 +1,735 @@
+~MM.STARTUP* 53
+~MM.PROMPT* 1219
+~MM.END* 1939
+~MM.DEVICE$ * 2355
+~MM.ADDRESS$ * 2497
+~MM.CMDLINE$ * 2651
+~MM.ERRNO  * 3095
+~MM.ERRMSG$  * 3521
+~MM.INFO() MM.INFO$()* 3958
+~MM.INFO$(AUTORUN)* 4193
+~MM.INFO(ADC) * 4328
+~MM.INFO(ADC DMA) * 4517
+~MM.INFO(BOOT COUNT)* 4641
+~MM.INFO$(CPUSPEED)* 4821
+~MM.INFO$(LCDPANEL)* 4937
+~MM.INFO(LCD320)* 5079
+~MM.INFO$(SDCARD) * 5248
+~MM.INFO$(CURRENT)* 5423
+~MM.INFO$(PATH) * 5629
+~MM.INFO(DISK SIZE) * 5795
+~MM.INFO$(DRIVE) * 5921
+~MM.INFO(EXISTS FILE fname$) * 6049
+~MM.INFO(EXISTS DIR dirname$) * 6250
+~MM.INFO$(FREE SPACE) * 6413
+~MM.INFO$(FILESIZE file$) * 6544
+~MM.INFO$(MODIFIED file$) * 6714
+~MM.INFO(FCOLOUR) * 6875
+~MM.INFO(BCOLOUR) * 6993
+~MM.INFO(FONT) * 7107
+~MM.INFO(FONT ADDRESS n) * 7238
+~MM.INFO(FONT POINTER n) * 7401
+~MM.INFO(FONTHEIGHT) * 7541
+~MM.INFO(FONTWIDTH)* 7690
+~MM.INFO$(FLASH) * 7834
+~MM.INFO(FLASH ADDRESS n) * 7987
+~MM.INFO(HEAP) * 8112
+~MM.INFO(HPOS) * 8336
+~MM.INFO(VPOS) * 8499
+~MM.INFO(ID) * 8658
+~MM.INFO$(IP ADDRESS) * 8771
+~MM.INFO(OPTION option)  * 8899
+~MM.INFO$(PIN pinno) * 9181
+~MM.INFO$(PINNO GPnn) * 9350
+~MM.INFO(PERSISTENT)* 9615
+~MM.INFO(PIO RX DMA) * 9891
+~MM.INFO(PIO TX DMA) * 10025
+~MM.INFO$(PLATFORM) * 10158
+~MM.INFO(PS2) * 10291
+~MM.INFO$(SOUND)* 10435
+~MM.INFO(STACK)* 10596
+~MM.INFO$(SYSTEM I2C) * 10983
+~MM.INFO(SYSTEM HEAP) * 11115
+~MM.INFO(TILE HEIGHT) * 11245
+~MM.INFO(TRACK) * 11374
+~MM.INFO$(TOUCH) * 11541
+~MM.INFO(USB n) * 11723
+~MM.INFO(VARCNT) * 12295
+~MM.INFO$(LINE) * 12434
+~MM.INFO(UPTIME) * 12668
+~MM.INFO(VERSION) * 12815
+~MM.INFO(WRITEBUFF) * 12950
+~MM.INFO(TCP PORT) * 13111
+~MM.INFO(UDP PORT) * 13260
+~MM.INFO(TCPIP STATUS) * 13411
+~MM.INFO(WIFI STATUS) * 13543
+~MM.HRES * 13957
+~MM.VRES * 14156
+~MM.MESSAGE$ * 14356
+~MM.ONEWIRE * 14479
+~MM.I2C * 14695
+~MM.WATCHDOG * 14982
+~Options* 15178
+~OPTION ANGLE RADIANS | DEGREES * 15282
+~OPTION AUDIO PWMnApin, PWMnBpin  or OPTION AUDIO DISABLE * 15541
+~OPTION AUDIO DISABLE* 16307
+~OPTION AUDIO SPI Cspin,  CLKpin, MOSIpin  or OPTION AUDIO DISABLE * 16477
+~OPTION AUDIO VS1053 CLKpin, MOSIpin, MISOpin, XCSpin, XDCSpin, DREQpin, XRSTpin or OPTION AUDIO DISABLE* 16838
+~OPTION AUDIO I2S BCLKpin, DATApin* 17241
+~OPTION AUTORUN OFF* 18548
+~OPTION AUTORUN ON [,NORESET] or OPTION AUTORUN n [,NORESET] or OPTION AUTORUN OFF* 18710
+~OPTION BASE 0 | 1 * 19484
+~OPTION BAUDRATE nn * 19722
+~OPTION BREAK nn * 19865
+~OPTION CASE LOWER | UPPER | TITLE * 20336
+~OPTION COLOURCODE OFF* 20696
+~OPTION COLOURCODE ON or OPTION COLOURCODE OFF * 20835
+~OPTION CONSOLE output* 21290
+~OPTION CPUSPEED * 21556
+~OPTION COUNT pin1, pin2, pin3, pin4* 22135
+~OPTION DEFAULT FLOAT | INTEGER | STRING | NONE * 22476
+~OPTION DEFAULT COLOURS foreground [,background]* 22987
+~OPTION DEFAULT MODE n * 23473
+~OPTION DISK SAVE fname$ | OPTION DISK LOAD fname$ * 23704
+~OPTION DISPLAY lines [,chars]* 24102
+~OPTION ESCAPE* 24921
+~OPTION EXPLICIT * 25112
+~OPTION FAST AUDIO ON|OFFF* 25508
+~OPTION FNKey string$* 26234
+~OPTION HDMI PINS  clockpositivepin, d0positivepin, d1positivepin, d2positivepin * 26661
+~OPTION HEARTBEAT ON/OFF * 27691
+~OPTION KEYBOARD nn [,capslock] [,numlock] [,repeatstart] [,repeatrate] or OPTION KEYBOARD DISABLE* 27970
+~OPTION KEYBOARD I2C* 29237
+~OPTION KEYBOARD PINS clockpin, datapin* 29471
+~OPTION KEYBOARD REPEAT repeatstart , repeatrate * 29789
+~OPTION LCDPANEL /* * 30025
+~OPTION LCDPANEL VIRTUAL_C  or OPTION LCDPANEL VIRTUAL_M* 30209
+~OPTION LCDPANEL options or OPTION LCDPANEL DISABLE* 30694
+~OPTION LCDPANEL CONSOLE [font [, fc [, bc [,blight]]] [,NOSCROLL] or OPTION LCDPANEL NOCONSOLE* 31067
+~OPTION LCDPANEL USER hres, vres* 32273
+~OPTION LCDPANEL CONSOLE [font [, fc [,bc]] or OPTION LCDPANEL NOCONSOLE /* * 32602
+~OPTION LCD320 ON/OFF * 33155
+~OPTION LEGACY ON or OPTION LEGACY OFF  * 33600
+~OPTION LIST * 34231
+~OPTION MILLISECONDS ON|OFF* 34436
+~OPTION MODBUFF ENABLE/DISABLE [sizeinK]* 34783
+~OPTION MOUSE CLKpin, DATApin * 35219
+~OPTION MOUSE DISABLE * 35866
+~OPTION PICO ON/OFF* 36039
+~OPTION PIN nbr * 36285
+~OPTION PLATFORM name$* 37233
+~OPTION POWER PFM | PWM* 37776
+~OPTION PSRAM PIN n  or OPTION PSRAM DISABLE* 38074
+~OPTION RESET  * 38340
+~OPTION RESET cfg or OPTION RESET LIST* 38554
+~OPTION RESOLUTION nn [,cpuspeedinKhz] * 38868
+~OPTION RTC AUTO ENABLE | DISABLE * 39912
+~OPTION SDCARD Cspin [,CLKpin, MOSIpin, MISOpin] or OPTION SDCARD DISABLE* 40355
+~OPTION SDCARD COMBINED CS* 40983
+~OPTION SERIAL CONSOLE uartapin, uartbpin* 41467
+~OPTION SERIAL CONSOLE DISABLE * 41909
+~OPTION SYSTEM I2C sdapin, sclpin [,SLOW/FAST]* 42139
+~OPTION SYSTEM SPI CLKpin, MOSIpin, MISOpin or OPTION SYSTEM SPI DISABLE* 43103
+~OPTION TAB 2 | 3 | 4 | 8 * 43705
+~OPTION TCP SERVER PORT n  * 43852
+~OPTION TELNET CONSOLE OFF|ONLY|ON * 44188
+~OPTION TFTP OFF|ON * 44464
+~OPTION TOUCH FT6336 IRQpin, RESETpin [,BEEPpin] [,sensitivity]* 44645
+~OPTION TOUCH T_CS pin, T_IRQ pin [, Beep] or OPTION TOUCH DISABLE * 45771
+~OPTION VCC voltage * 46004
+~OPTION UDP SERVER PORT n * 46524
+~OPTION VGA PINS HSYNCpin, BLUEpin * 46970
+~OPTION WEB MESSAGES ON/OFF * 47405
+~OPTION WIFI ssid$, passwd$, [name$] [,ipaddress$, mask$, gateway$] * 47610
+~About MBASIC commands* 48305
+~A:  B:      Shortcut* 48996
+~ADC* 49125
+~ADC OPEN freq, n_channels [,interrupt] * 49358
+~ADC FREQUENCY freq * 50281
+~ADC CLOSE * 50450
+~ADC START array1!() [,array2!()] [,array3!()] [,array4!()] [,Chan4arr!()] [,C1min] [,C1max] [,C2min] [,C2max] [,C3min] [,C3max] [,C4min] [,C4max] * 50686
+~ADC RUN array1%(),array2%)* 51393
+~ARC x, y, r1, [r2], a1, a2 [, c] * 51907
+~AUTOSAVE or AUTOSAVE CRUNCH or AUTOSAVE APPEND * 52499
+~BACKLIGHT n [,DEFAULT] * 53754
+~BITBANG * 54122
+~BLIT* 54313
+~BLIT READ [#]b, x, y, w, h * 54646
+~BLIT WRITE [#]b, x, y [,mode] %, x, y [,col] * 55131
+~BLIT LOAD[BMP] [#]b, fname$ [,x] [,y] [,w] [,h]* 55649
+~BLIT CLOSE [#]b * 56086
+~BLIT MERGE colour, x, y, w, h * 56307
+~BLIT FRAMEBUFFER from, to, xin, yin, xout, yout, width, height [,colour]* 57124
+~BLIT MEMORY address, x, y [,col]* 58110
+~BLIT COMPRESSED address%, x, y [,col]* 59289
+~BLIT x1, y1, x2, y2, w, h* 59508
+~BOX x, y, w, h [, lw] [,c] [,fill] * 60011
+~CALL usersubname$ [,usersubparameters,....] * 60977
+~CAMERA * 61815
+~CAMERA OPEN XLKpin, PLKpin, HSpin, VSCpin, RETpin, D0pin* 62066
+~CAMERA CAPTURE [scale, [x , y]]* 62944
+~CAMERA CLOSE* 63756
+~CAMERA CHANGE image%(),change! [,scale [,x ,y]]* 63945
+~CAMERA TEST tnum* 64959
+~CAMERA REGISTER reg%, data%* 65219
+~CAT S$, N$ * 65651
+~CHAIN fname$ [,cmdline$] * 65853
+~CHDIR dir$ * 66163
+~CIRCLE x, y, r [,lw] [, a] [, c] [, fill] * 66465
+~CLEAR * 67512
+~CLOSE [#]fnbr [,[#]fnbr] ... * 67700
+~CLS [colour] * 67915
+~CMM2 LOAD or CMM2 RUN* 68129
+~COLOUR fore [, back] or COLOR fore [, back] * 68738
+~COLOUR MAP inarray%(),outarray%() [,colourmap%()]* 69110
+~CONFIGURE cfg  * 69486
+~CONFIGURE LIST * 69636
+~CONST id = expression [, id = expression] ... etc  * 69820
+~CONTINUE * 70588
+~CONTINUE DO or CONTINUE FOR * 71037
+~COPY fname1$ TO fname2$ Copy a file from 'fname1$' to 'fname2$' * 71332
+~COPY fname$ TO dirname$* 71824
+~CPU RESTART * 72075
+~CPU SLEEP n * 72444
+~CSUB name [type [, type] ...] /hex [[ hex[...] / END CSUB * 72700
+~DATA constant[,constant]... * 74745
+~DATE$ = "DD-MM-YY[YY]" or DATE$ = "DD/MM/YY[YY]" or DATE$ ="YYYY-MM-DD" or DATE$="YYYY/MM/DD" * 75289
+~DEFINEFONT #Nbr /hex [[ hex[...] /END DEFINEFONT * 75784
+~DEVICE BITSTREAM pinno, n_transitions, array%()* 77066
+~DEVICE CAMERA * 77829
+~DEVICE GAMEPAD * 77922
+~DEVICE HUMID * 78015
+~DEVICE KEYPAD * 78105
+~DEVICE MOUSE * 78196
+~DEVICE LCD * 78284
+~DEVICE SERIALTX pinno,baudrate,ostring$* 78395
+~DEVICE SERIALRX pinno, baudrate, istring$, timeout_in_ms, status% [,nbr] [,terminators$]* 78782
+~DEVICE WII * 79487
+~DEVICE WS2812 * 79573
+~DIM [type] decl [,decl]...  * 79679
+~DO <statements> LOOP * 84911
+~DO WHILE expression <statements> LOOP * 85249
+~DO <statements> LOOP UNTIL expression * 85413
+~DRAW3D * 85743
+~DRAW3D CREATE* 89920
+~DRAW3D ROTATE q(), n [,n1 [,n2...]}* 92632
+~DRAW3D RESET n [,n1 [,n2...]}* 94502
+~DRAW3D CAMERA n, z_viewplane[,x_camera [,y_camera] [,PAN_X] [,PAN_Y]* 95020
+~DRAW3D SHOW n, x, y, z [,nocull] or DRAW3D WRITE n, x, y, z [,nocull]* 97361
+~DRAW3D HIDE n [,n1 [,n2...]]* 98804
+~DRAW3D HIDE ALL* 99028
+~DRAW3D CLOSE n [,n1 [,n2...]]* 99175
+~DRAW3D CLOSE ALL* 99426
+~DRAW3D DIAGNOSE objectno, x, y, z* 99579
+~DRIVE drive$* 100062
+~EDIT or  EDIT fname$ or EDIT FILE fname$ * 100294
+~EDIT FILE * 101626
+~ELSE * 101778
+~ELSEIF expression THEN or ELSE IF expression THEN * 102000
+~END * 102223
+~END CSUB * 102340
+~END FUNCTION * 102533
+~ENDIF or END IF * 102830
+~END SUB * 102986
+~ERASE variable [,variable]... * 103278
+~ERROR [error_msg$] * 103695
+~EXECUTE command$ * 103969
+~EXIT DO * 104751
+~EXIT FOR * 104854
+~EXIT FUNCTION  * 104971
+~EXIT SUB * 105089
+~FILES [fspec$] [,sort] * 105290
+~FILES [fspec$] [,sort] * 106141
+~FLASH * 106216
+~FLASH LIST * 106663
+~FLASH LIST n [,all] * 106820
+~FLASH ERASE n * 106970
+~FLASH ERASE ALL * 107077
+~FLASH SAVE n * 107186
+~FLASH LOAD n * 107315
+~FLASH RUN n * 107455
+~FLASH CHAIN n * 107621
+~FLASH OVERWRITE n * 107871
+~FLASH DISK LOAD n, fname$ [,O[VERWRITE]]* 108072
+~FLUSH [#]fnbr * 108603
+~FONT [#]font-number, scaling * 108915
+~FOR counter = start TO finish [STEP increment] * 109445
+~FRAMEBUFFER NOT HDMI AND VGA VERSIONS* 110145
+~FRAMEBUFFER CREATE NOT HDMI AND VGA VERSIONS* 110533
+~FRAMEBUFFER LAYER NOT HDMI AND VGA VERSIONS* 110776
+~FRAMEBUFFER WRITE where/where$ NOT HDMI AND VGA VERSIONS* 111031
+~FRAMEBUFFER CLOSE [which] NOT HDMI AND VGA VERSIONS* 111341
+~FRAMEBUFFER COPY from, to [,b] NOT HDMI AND VGA VERSIONS* 111609
+~FRAMEBUFFER WAIT NOT HDMI AND VGA VERSIONS* 112476
+~FRAMEBUFFER MERGE [colour] [,mode] [,updaterate] NOT HDMI AND VGA VERSIONS* 112812
+~FRAMEBUFFER SYN NOT HDMI AND VGA VERSIONS* 114734
+~FRAMEBUFFER  HDMI AND VGA VERSIONS ONLY* 114950
+~FRAMEBUFFER CREATE HDMI AND VGA VERSIONS ONLY* 115324
+~FRAMEBUFFER CREATE 2  HDMI AND VGA VERSIONS ONLY* 115557
+~FRAMEBUFFER LAYER [colour] HDMI AND VGA VERSIONS ONLY* 115818
+~FRAMEBUFFER LAYER TOP [colour] HDMI AND VGA VERSIONS ONLY* 116386
+~FRAMEBUFFER WRITE where/where$ HDMI AND VGA VERSIONS ONLY* 116945
+~FRAMEBUFFER CLOSE [which] HDMI AND VGA VERSIONS ONLY* 117249
+~FRAMEBUFFER COPY from, to [,b] HDMI AND VGA VERSIONS ONLY* 117524
+~FRAMEBUFFER WAIT HDMI AND VGA VERSIONS ONLY* 117918
+~FUNCTION xxx (arg1 [,arg2, ...]) [AS <type>} <statements> xxx = <return value> END FUNCTION * 118153
+~GAMEPAD COLOUR channel, colour* 120818
+~GAMEPAD HAPTIC channel left, right* 121071
+~GAMEPAD INTERRUPT ENABLE channel, int [,mask]* 121366
+~GAMEPAD CONFIGURE vid, pid, i0, c0, i1, c1, i2, c2, i3, c3, i4, c4, i5, c5, i6, c6, i7, c7, i8, c8, i9, c9, i10, c10, i11, c11, i12, c12, i13, c13, i14, c14, i15, c15* 121889
+~GAMEPAD INTERRUPT DISABLE channel* 123040
+~GAMEPAD MONITOR* 123132
+~GOTO target * 123359
+~GUI BITMAP x, y, bits [, width] [, height] [, scale] [, c] [, bc] * 123564
+~GUI CALIBRATE or  GUI CALIBRATE a,b,c,d,d * 124517
+~GUI RESET LCDPANEL * 125158
+~GUI TEST LCDPANEL Or GUI TEST TOUCH * 125551
+~HUMID pin, tvar, hvar [,DHT11]* 126051
+~I2C Communications Appendix B* 128598
+~I2C OPEN speed, timeout * 137066
+~I2C WRITE addr, option, sendlen, senddata [,sendata ....] * 137512
+~I2C READ addr, option, rcvlen, rcvbuf * 138490
+~I2C CHECK addr* 139184
+~I2C CLOSE * 139391
+~I2C SLAVE * 139549
+~I2C2 * 139624
+~IF expr THEN stmt [: stmt] or IF expr THEN stmt ELSE stmt * 139817
+~INPUT ["prompt$"] var1 [,var2[, var3 [, etc]]]* 141049
+~INPUT #nbr, list of variables * 142038
+~INTERRUPT [myint] * 142262
+~IR dev, key , int or IR CLOSE * 142711
+~IR SEND pin, dev, key * 147818
+~KEYPAD var, int, r1, r2, r3, r4, c1, c2, c3 [, c4] or KEYPAD CLOSE * 148464
+~KILL file$ [,all] * 151318
+~LCD INIT d4, d5, d6, d7, rs, en   or  LCD line, pos, text$  or  LCD CLEAR   or  LCD CLOSE* 151624
+~LCD CMD d1 [, d2 [, etc]] or LCD DATA d1 [, d2 [, etc]]* 153185
+~LET variable = expression * 155572
+~LIBRARY SAVE  or LIBRARY DELETE or LIBRARY LIST or LIBRARY LIST ALL or LIBRARY DISK SAVE fname$ or LIBRARY DISK LOAD fname$* 155919
+~LINE x1, y1, x2, y2 [, LW [, C]] * 157614
+~LINE AA x1, y1, x2, y2 [, LW [, C]] * 158420
+~LINE GRAPH x(), y(), colour* 158866
+~LINE INPUT [prompt$,] string-variable$ * 159152
+~LINE INPUT #nbr, string-variable$  * 159612
+~LINE PLOT ydata() [,nbr][,xstart] [,xinc] [,ystart] [,yinc][,colour]* 159909
+~LIST [fname$] or LIST ALL [fname$] * 160637
+~LIST COMMANDS or LIST FUNCTIONS * 161133
+~LIST PINS* 161258
+~LIST SYSTEM I2C* 161818
+~LOAD file$ [,R] * 162003
+~LOAD IMAGE file$ [, x] [, y] * 162377
+~LOAD JPG file$ [, x] [, y] * 162958
+~LOAD PNG fname$ [, x] [, y][,transparent] [,alphacut]* 163498
+~LOCAL variable [, variables] * 164239
+~LONGSTRING * 164645
+~LONGSTRING AES128 ENCRYPT/DECRYPT CBC/ECB/CTR key$/key[!/%](), in%(), out%() [,iv$/iv[!/%]()]* 165427
+~LONGSTRING APPEND array%(), string$ * 166387
+~LONGSTRING BASE64 ENCODE/DECODE in%(), out%()* 166659
+~LONGSTRING CLEAR array%() * 167019
+~LONGSTRING COPY dest%(), src%() * 167208
+~LONGSTRING CONCAT dest%(), src%() * 167468
+~LONGSTRING LCASE array%() * 167773
+~LONGSTRING LEFT dest%(), src%(), nbr * 167985
+~LONGSTRING LOAD array%(), nbr, string$ * 168350
+~LONGSTRING MID dest%(), src%(), start, nbr * 168593
+~LONGSTRING PRINT [#n,] src%() * 169095
+~LONGSTRING REPLACE array%() , string$, start * 169451
+~LONGSTRING RESIZE addr%(), nbr * 169724
+~LONGSTRING RIGHT dest%(), src%(), nbr * 170030
+~LONGSTRING SETBYTE addr%(), nbr, data * 170391
+~LONGSTRING TRIM array%(), nbr * 170565
+~LONGSTRING UCASE array%() * 170817
+~LOOP [UNTIL expression] * 171016
+~MAP commands HDMI VERSION ONLY* 171151
+~MAP( n ) = rgb%   <- HDMI VERSION ONLY* 171507
+~MAP MAXIMITE   <- HDMI VERSION ONLY* 171774
+~MAP GREYSCALE   <- HDMI VERSION ONLY* 171979
+~MAP SET    <- HDMI VERSION ONLY* 172201
+~MAP RESET    <- HDMI VERSION ONLY* 172424
+~MAP commands    <- VGA VERSION ONLY* 172591
+~MAP( n ) = rgb%    <- VGA VERSION ONLY* 172930
+~MAP MAXIMITE    <- VGA VERSION ONLY* 173299
+~MAP SET    <- VGA VERSION ONLY* 173498
+~MAP RESET    <- VGA VERSION ONLY* 173719
+~MATH commands* 174354
+~MATH RANDOMIZE [n]* 174772
+~Simple array arithmetic commands* 175079
+~MATH SET nbr, array() * 175219
+~MATH SCALE in(), scale ,out() * 175440
+~MATH ADD in(), num ,out() * 175792
+~MATH INTERPOLATE in1(), in2(), ratio, out() * 176210
+~MATH WINDOW in(), minout, maxout, out() [,minin, maxin]* 176642
+~MATH SLICE sourcearray(), [d1] [,d2] [,d3] [,d4] [,d5] , destinationarray() * 177344
+~MATH INSERT targetarray(), [d1] [,d2] [,d3] [,d4] [,d5] , sourcearray() * 178048
+~MATH POWER inarray(), power, outarray()* 178574
+~Matrix arithmetic commands* 178778
+~MATH M_INVERSE array!(), inversearray!() * 178925
+~MATH M_PRINT array() * 179240
+~MATH M_TRANSPOSE in(), out() * 179390
+~MATH M_MULT in1(), in2(), out() * 179669
+~Vector arithmetic * 179957
+~MATH V_PRINT array() * 180076
+~MATH V_NORMALISE inV(), outV() * 180229
+~MATH V_MULT matrix(), inV(), outV() * 180492
+~MATH V_CROSS inV1(), inV2(), outV() * 180755
+~MATH V_ROTATE x, y, a, xin(), yin(), xout(), yout()* 180993
+~Quaternion arithmetic* 181443
+~MATH Q_INVERT inQ(), outQ() * 181567
+~MATH Q_VECTOR x, y, z, outVQ() * 181731
+~MATH Q_CREATE theta, x, y, z, outRQ() * 181966
+~MATH Q_EULER yaw, pitch, roll, outRQ() * 182241
+~MATH Q_MULT inQ1,inQ2,outQ * 182767
+~MATH Q_ROTATE , RQ(), inVQ(), outVQ() * 182952
+~MATH C* 183147
+~MATH FFT signalarray!(), FFTarray!() * 183949
+~MATH FFT INVERSE FFTarray!(), signalarray!() * 184519
+~MATH FFT MAGNITUDE signalarray!(),magnitudearray!() * 185110
+~MATH FFT PHASE signalarray!(), phasearray!() * 185707
+~MATH SENSORFUSION type ax, ay, az, gx, gy, gz, mx, my, mz, pitch, roll, yaw [,p1] [,p2]* 186266
+~MATH PID INIT channel, pid_params!(), callback* 187710
+~MATH PID START channel * 188783
+~MATH PID STOP channel * 188945
+~MATH AES128 ENCRYPT/DECRYPT CBC/ECB/CTR key$/key(), in$/in(), out$/out() [,iv$/iv()]* 190515
+~MEMORY * 192006
+~MEMORY SET * 192374
+~MEMORY COPY sourceaddress, destinationaddres, numberofbytes* 193522
+~MEMORY COPY INTEGER (or FLOAT) sourceaddress, destinationaddress, numberofintegers [,sourceincrement] [,destinationincrement] * 194165
+~MEMORY PRINT #]fnbr , nbr, address%/array() MEMORY INPUT [#]fnbr , nbr, address%/array()* 195091
+~MEMORY PACK (or UNPACK ) source%()/sourceaddress%, dest%()/destaddress%, number, size * 195699
+~MKDIR dir$ * 196648
+~MID$( str$, start [, num]) = str2$ * 196793
+~MODE 1 or MODE 2 Or MODE 3 (RP2350 only) * 197281
+~MODE n * 199851
+~OPTION RESOLUTION* 203174
+~MOUSE  * 204521
+~MOUSE INTERRUPT ENABLE channel, int* 204827
+~MOUSE INTERRUPT DISABLE channel* 205032
+~MOUSE SET channel, y- coord, y-coord [, wheel-count]* 205207
+~MOUSE OPEN channel, CLKpin, DATApin * 205437
+~MOUSE CLOSE channel* 205971
+~NEW * 206158
+~NEXT [counter-variable] [,counter-variable], etc * 206418
+~ON ERROR ABORT or ON ERROR IGNORE or ON ERROR SKIP [nn] or ON ERROR CLEAR* 206883
+~ON ERROR ABORT * 207202
+~ON ERROR IGNORE * 207460
+~ON ERROR SKIP * 207572
+~ON ERROR CLEAR. * 208413
+~ON KEY target or ON KEY ASCIIcode, target * 208743
+~ON PS2 target* 209700
+~ONEWIRE RESET pin or ONEWIRE WRITE pin, flag, length, data [, data...] or  ONEWIRE READ pin, flag, length, data [, data...] * 210166
+~OPEN fname$ FOR mode AS [#]fnbr * 212751
+~OPEN comspec$ AS [#]fnbr * 214425
+~OPEN comspec$ AS GPS [,timezone_offset] [,monitor] * 221476
+~PAUSE delay * 222198
+~PIN( pin ) = value * 222516
+~PIO machine* 223076
+~PIO assemble pio,linedata$* 250637
+~PIO DMA RX pio, sm, nbr, data%() [,completioninterrupt] [,transfersize] [,loopbackcount] or PIO DMA TX pio, sm, nbr, data%() [,completioninterrupt] [,transfersize] [,loopbackcount]* 252157
+~PIO DMA RX OFF* 254005
+~PIO INTERRUPT pio, sm [,RXinterrupt] [,TXinterrupt]* 254152
+~PIO INIT MACHINE pio%, statemachine%, clockspeed [,pinctrl] [,execctrl] [,shiftctrl] [,startinstruction]* 254750
+~PIO INIT MACHINE pio%,statemachine%, clockspeed[,pinctrl] [,execctrl] [,shiftctrl][,startinstruction] [,sideout [,setout] [,outout]* 255705
+~PIO EXECUTE pio, state_machine, instruction%* 256226
+~PIO WRITE pio, state_machine, count, data0 [,data1..] * 256446
+~PIO WRITEFIFO a,b,v,d* 256798
+~PIO READ pio, state_machine, count, data%[()]* 257096
+~PIO START pio, statemachine * 257572
+~PIO STOP pio, statemachine  * 257708
+~PIO CLEAR pio * 257829
+~PIO PROGRAM LINE pio, line, instruction * 258080
+~PIXEL x, y [,c] * 258231
+~Sound Output * 258984
+~PLAY * 266514
+~PLAY TONE left [, right [, dur] [,interrupt]]] * 266860
+~PLAY FLAC file$ [, interrupt]* 267694
+~PLAY WAV file$ [, interrupt] * 268258
+~PLAY MP3 file$ [, interrupt]* 268809
+~PLAY MODFILE file$ [,interrupt]* 269339
+~PLAY MODSAMPLE Samplenum, channel [,volume]* 270018
+~PLAY LOAD SOUND array%()* 270405
+~PLAY SOUND soundno, channelno, type [,frequency] [,volume] * 270810
+~PLAY PAUSE * 271961
+~PLAY RESUME * 272088
+~PLAY STOP * 272201
+~PLAY VOLUME left, right * 272432
+~PLAY NEXT * 272828
+~PLAY PREVIOUS * 272979
+~PLAY MP3 file$ [, interrupt] (VS1053 specific)* 273170
+~PLAY HALT (VS1053 specific)* 273708
+~PLAY CONTINUE track$ (VS1053 specific)* 274047
+~PLAY MIDIFILE file$ [,interrupt] (VS1053 specific)* 274428
+~PLAY MIDI (VS1053 specific)* 274797
+~PLAY MIDI CMD cmd%,data1%, data2% (VS1053 specific)* 275118
+~PLAY MIDI TEST n (VS1053 specific)* 275422
+~PLAY NOTE ON channel%, note%, velocity% (VS1053 specific)* 275661
+~PLAY NOTE OFF channel%, note% [,velocity%] (VS1053 specific)* 275894
+~PLAY STREAM buffer%(),readpointer%, writepointer%  (VS1053 specific)* 276139
+~POKE BYTE addr%, byte or POKE SHORT addr%, short% or POKE WORD addr%, word% or POKE INTEGER addr%, int% or POKE FLOAT addr%, float!  or POKE VAR var, offset, byte or POKE VARTBL, offset, byte* 276741
+~POKE DISPLAY command [,data1] [,data2] [,datan]* 278085
+~POKE DISPLAY HRES n. (or VRES n)* 278543
+~POLYGON (polygon drawing commands)* 278818
+~PORT(start, nbr [,start, nbr]...) = value * 281260
+~PRINT expression [[,; ]expression] ... etc * 282289
+~PRINT #nbr, expression [[,; ]expression] ... etc* 283444
+~PRINT #GPS, expression [[,; ]expression] ... etc [[,; ]expression] ... etc * 283784
+~PRINT @(x [, y]) expression Or PRINT @(x, [y], m) expression * 284187
+~PULSE pin, width * 285361
+~PWM channel, frequency,[dutyA][,dutyB][,phase][,defer]* 286355
+~PWM SYNC s0 [,s1][,s2][,s3][,s4][,s5][,s6][,s7]* 287555
+~PWM channel, OFF  * 287890
+~RAM* 287982
+~RANDOMIZE nbr * 288382
+~RBOX x, y, w, h [, r] [,c] [,fill] * 288907
+~READ variable[, variable]... * 289844
+~READ SAVE or READ RESTORE * 290417
+~REFRESH* 290863
+~REM string * 291231
+~RENAME old$ AS new$ * 291474
+~RESTORE [line] * 291813
+~RMDIR dir$ * 292196
+~RTC GETTIME  * 292322
+~RTC SETTIME year, month,day, hour, minute, second * 294362
+~RTC SETREG reg, value or RTC GETREG reg, var * 296595
+~RUN or RUN [file$] [, cmdline$]* 297460
+~SAVE file$ * 298155
+~SAVE CONTEXT [CLEAR] or LOAD CONTEXT [KEEP]* 298506
+~SAVE PERSISTENT n%* 299136
+~SAVE IMAGE file$ [,x, y, w, h]  or  SAVE COMPRESSED IMAGE file$ [,x, y, w, h] * 299413
+~SEEK [#]fnbr, pos * 300224
+~SELECT CASE value CASE testexp <statements> CASE ELSE <statements> END SELECT * 300646
+~SERVO channel [positionA] [,positionB]* 302582
+~SETPIN pin, cfg, target [,option] * 303053
+~SETPIN pin, cfg, target [, option]* 305653
+~SETPIN GP25, DOUT | HEARTBEAT* 306599
+~SETPIN p1[, p2 [, p3]], device * 307023
+~SETPIN rx, tx, COM1 * 307707
+~SETPIN rx, tx, COM2 * 307897
+~SETPIN rx, tx, clk, SPI * 308069
+~SETPIN rx, tx, clk, SPI2 * 308272
+~SETPIN sda, scl, I2C * 308491
+~SETPIN sda, scl, I2C2 * 308698
+~SETPIN pin, PWMnx * 308925
+~SETPIN pin, IR  * 309225
+~SETPIN pin, PIOn  * 309370
+~SETPIN GP1, FFIN [,gate]* 309529
+~SETTICK period, target [, nbr] * 310146
+~SETTICK PAUSE, target [, nbr]  or  SETTICK RESUME, target [, nbr] * 310795
+~SORT array() [,indexarray()] [,flags] [,startposition] [,elementstosort]  * 311097
+~SPI OPEN speed, mode, bits or SPI READ nbr, array() or SPI WRITE nbr, data1, data2,data3, ... etc or SPI WRITE nbr, string$ or SPI WRITE nbr, array() or SPI CLOSE* 314106
+~SPI2 * 320394
+~SPRITE (VGA AND HDMI VERSIONS ONLY)* 320478
+~SPRITE CLOSE [#]n  (VGA AND HDMI VERSIONS ONLY)* 325401
+~SPRITE CLOSE ALL (VGA AND HDMI VERSIONS ONLY)* 325641
+~SPRITE COPY [#]n, [#]m, nbr (VGA AND HDMI VERSIONS ONLY)* 325864
+~SPRITE HIDE [#]n  (VGA AND HDMI VERSIONS ONLY)* 326159
+~SPRITE HIDE ALL (VGA AND HDMI VERSIONS ONLY)* 326487
+~SPRITE RESTORE  (VGA AND HDMI VERSIONS ONLY)* 326861
+~SPRITE HIDE SAFE [#]n (VGA AND HDMI VERSIONS ONLY)* 327071
+~SPRITE INTERRUPT sub  (VGA AND HDMI VERSIONS ONLY)* 327664
+~SPRITE READ [#]b, x, y, w, h (VGA AND HDMI VERSIONS ONLY)* 328002
+~SPRITE WRITE [#]b, x, y (VGA AND HDMI VERSIONS ONLY)* 328521
+~SPRITE LOAD fname$ [,start_sprite_number] [,mode] (VGA AND HDMI VERSIONS ONLY)* 329107
+~SPRITE LOADARRAY [#]n, w, h, array%() (VGA AND HDMI VERSIONS ONLY)* 330041
+~SPRITE LOADBMP [#]b, fname$ [,x] [,y] [,w] [,h] (VGA AND HDMI VERSIONS ONLY)* 330680
+~SPRITE LOADPNG [#]b, fname$ [,transparent] [,alphacut] (VGA AND HDMI VERSIONS ONLY)* 331226
+~SPRITE MOVE (VGA AND HDMI VERSIONS ONLY)* 331962
+~SPRITE NEXT [#]n, x, y (VGA AND HDMI VERSIONS ONLY)* 332344
+~SPRITE SCROLL x, y [,col] (VGA AND HDMI VERSIONS ONLY)* 332740
+~SPRITE SET TRANSPARENT n (VGA AND HDMI VERSIONS ONLY)* 333403
+~SPRITE SHOW [#]n, x,y, layer [,options] (VGA AND HDMI VERSIONS ONLY)* 333693
+~SPRITE SHOW SAFE [#]n, x,y, layer [,orientation] [,ontop] (VGA AND HDMI VERSIONS ONLY)* 334522
+~SPRITE SWAP [#]n1, [#]n2 [,orientation] (VGA AND HDMI VERSIONS ONLY)* 335374
+~STATIC variable [, variables] * 335854
+~SUB xxx (arg1 [,arg2, ...]) <statements> END SUB * 336607
+~SYNC time% [,period] or SYNC* 338476
+~TEMPR START pin [, precision] * 339571
+~TEXT x, y, string$ [,alignment$] [, font] [, scale] [, c] [, bc] * 340625
+~TILE x, y [,foreground] [,background] [,nbr_tiles_wide]  [,nbr_tiles_high] * 342325
+~TILE HEIGHT n * 343253
+~TIME$ = "HH:MM:SS" or TIME$ = "HH:MM" or TIME$ = "HH" * 343465
+~TIMER = msec * 343933
+~TRACE ON TRACE ON/OFF or  TRACE OFF or TRACE LIST nn * 344232
+~TRIANGLE X1, Y1, X2, Y2, X3, Y3 [, C [, FILL]] * 344793
+~UPDATE FIRMWARE * 345605
+~VAR SAVE var [, var]... or VAR RESTORE or VAR CLEAR* 345904
+~WATCHDOG timeout or WATCHDOG OFF or WATCHDOG HW timeout or WATCHDOG HW OFF  * 347838
+~WII [CLASSIC] OPEN [,interrupt]* 349470
+~WII [CLASSIC] CLOSE* 350098
+~WII NUNCHUCK OPEN [,interrupt]* 350267
+~WII NUNCHUCK CLOSE* 350900
+~WEB  WEBMITE ONLY* 351055
+~WEB CONNECT [ssid$, passwd$, [name$] [,ipaddress$, mask$, gateway$]]* 351283
+~WEB MQTT CONNECT addr$, port, user$, passwd$ [, interrupt]* 351702
+~WEB MQTT PUBLISH topic$, msg$, [,qos] [,retain] * 352385
+~WEB MQTT SUBSCRIBE topic$ [,qos]* 352690
+~WEB MQTT UNSUBSCRIBE topic$* 352943
+~WEB MQTT CLOSE* 353096
+~WEB NTP [timeoffset [,NTPserver$]] [,timeout]]]* 353239
+~WEB OPEN TCP CLIENT address$, port* 353718
+~WEB OPEN TCP STREAM address$, port* 354198
+~WEB SCAN [array%()]* 354730
+~WEB TCP CLIENT REQUEST request$, buff%() [,timeout]* 355082
+~WEB TCP CLIENT STREAM command$, buffer%(), readpointer%, writepointer%* 355857
+~WEB CLOSE TCP CLIENT* 356724
+~WEB TCP INTERRUPT InterruptSub* 356948
+~WEB TCP READ cb%, buff%()* 357318
+~WEB TCP SEND cb%, data%() or WEB TCP CLOSE cb%* 357927
+~WEB TRANSMIT CODE cb%, nnn%* 358405
+~WEB TRANSMIT FILE cb%, filename$, content-type$* 358689
+~WEB TRANSMIT PAGE cb%, filename$ [,buffersize]* 359094
+~WEB UDP INTERRUPT intname* 360003
+~WEB UDP SEND addr$, port, data$* 360304
+~WS2812 type, pin, nbr, value%[()]* 360773
+~XMODEM SEND or XMODEM SEND file$ or XMODEM RECEIVE or XMODEM RECEIVE file$ or XMODEM CRUNCH* 363328
+~MMBASIC Functions * 365216
+~ABS( number ) * 365470
+~ACOS( number ) * 365668
+~ASC( string$ ) * 365808
+~ASIN( number ) * 365960
+~ATN( number ) * 366103
+~ATAN2( y, x ) * 366237
+~BIN$( number [, chars]) * 366553
+~BIN2STR$(type, value [,BIG]) * 366842
+~BOUND(array() [,dimension] * 368290
+~CALL(userfunname$, [,userfunparameters,....]) * 368731
+~CHOICE(condition, ExpressionIfTrue, ExpressionIfFalse) * 369623
+~CHR$( number ) * 370249
+~CINT( number ) * 370323
+~COS( number ) * 370631
+~CWD$ * 370752
+~DATE$ * 370910
+~DATETIME$(n) * 371231
+~DAY$(date$) * 371578
+~DEG( radians ) * 371868
+~DEVICE(GAMEPAD channel, funct)* 371990
+~DEVICE(MOUSE channel, funct)* 373439
+~DEVICE(WII [CLASSIC] funct)* 374093
+~DEVICE(WII NUNCHUCK funct)* 375099
+~DIR$( fspec, type ) or DIR$( fspec )  or DIR$( )* 375622
+~DISTANCE( trigger, echo ) or DISTANCE( trig-echo ) * 376709
+~EOF( [#]fnbr ) * 378867
+~EPOCH(DATETIME$) * 379364
+~EVAL( string$ ) * 379769
+~EXP( number ) * 380214
+~FIELD$( string1, nbr, string2 [, string3] ) * 380390
+~FIX( number ) * 381101
+~FORMAT$( nbr [, fmt$] ) * 381611
+~GETSCANLINE * 383086
+~GPS()* 383526
+~GPS(ALTITUDE) * 383811
+~GPS(DATE) * 383935
+~GPS(DOP) * 384073
+~GPS(FIX) * 384208
+~GPS(GEOID) * 384372
+~GPS(LATITUDE) * 384511
+~GPS(LONGITUDE) * 384686
+~GPS(SATELLITES) * 384869
+~GPS(SPEED) * 385009
+~GPS(TIME) * 385137
+~GPS(TRACK) * 385275
+~GPS(VALID)  * 385421
+~HEX$( number [, chars]) * 385540
+~INKEY$ * 385813
+~INPUT$(nbr, [#]fnbr) * 386163
+~INSTR( [start-position,] string-searched$, string- pattern$ [,size] )  * 386943
+~INT( number ) * 390438
+~JSON$(array%(), string$)* 390699
+~KEYDOWN(n)* 391164
+~LCASE$( string$ ) * 394497
+~LCOMPARE(array1%(), array2%()) * 394645
+~LEFT$( string$, nbr ) * 395072
+~LEN( string$ ) * 395254
+~LGETBYTE(array%(), n) * 395384
+~LGETSTR$(array%(), start, length) * 395659
+~LINSTR(array%(), search$ [,start] [,size])) * 395940
+~LLEN(array%()) * 396702
+~LOC( [#]fnbr ) * 396833
+~LOF( [#]fnbr ) * 397316
+~LOG( number ) * 397760
+~MAP( n )* 397884
+~MATH functions* 398328
+~MATH(ATAN3 x,y) * 398674
+~MATH(COSH a) * 398774
+~MATH(LOG10 a) * 398882
+~MATH(SINH a) * 398990
+~MATH(TANH a) * 399095
+~MATH(CRCn data [,length] [,polynome] [,startmask] [,endmask] [,reverseIn] [,reverseOut]* 399273
+~MATH(RAND)* 399925
+~Simple Statistics* 400174
+~MATH(CHI a()) * 400276
+~MATH(CHI_p a()) * 400426
+~MATH(CROSSING array() [,level] [,direction]* 400640
+~MATH(CORREL a(), a()) * 400932
+~MATH(MAX a() [,index%]) * 401097
+~MATH(MEAN a()) * 401437
+~MATH(MEDIAN a()) * 401605
+~MATH(MIN a(), [index%]) * 401781
+~MATH(SD a()) * 402120
+~MATH(SUM a()) * 402294
+~Vector Arithmetic * 402458
+~MATH(MAGNITUDE v()) * 402567
+~MATH(DOTPRODUCT v1(), v2()) * 402745
+~Matrix Arithmetic * 402970
+~MATH(M_DETERMINANT array!()) * 403089
+~MATH(PID channel, setpoint!, measurement))* 404662
+~MATH(BASE64 ENCODE/DECODE in$/in(), out$/out())* 405065
+~MAX( arg1 [, arg2 [, ...]] )  or MIN( arg1 [, arg2 [, ...]] ) * 405507
+~MID$( string$, start ) or MID$( string$, start, nbr ) * 405777
+~OCT$( number [, chars]) * 406117
+~PEEK(BYTE addr%) or PEEK(SHORT addr%) or PEEK(WORD addr%) or PEEK(INTEGER addr%) or PEEK(FLOAT addr%) or PEEK(VARADDR var) or PEEK(CFUNADDR cfun) or PEEK(VAR var, +/-offset) or PEEK( VARTBL, +/-offset) or PEEK( PROGMEM, +/-offset)* 406610
+~PEEK(BP, n%) * 408220
+~PEEK(SP,n%) PEEK with increment to the next short* 408417
+~PEEK(WP,n%)PEEK with increment to the next word* 408650
+~PI * 408835
+~PIN( pin ) * 408920
+~PIN( BOOTSEL ) * 409733
+~PIN( TEMP ) * 409902
+~PIO(DMA RX POINTER) or PIO(DMA TX POINTER) * 410090
+~PIO (SHIFTCTRL push_threshold [,pull_threshold] [,autopush] [,autopull] [,in_shiftdir] [,out_shiftdir] [,fjoin_rx] [,fjoin_tx])* 410369
+~PIO (PINCTRL no_side_set_pins [,no_set_pins] [,no_out_pins] [,IN base] [,side_set_base] [,set_base][, out_base])* 410736
+~PIO (EXECCTRL jmp_pin ,wrap_target, wrap [,side_pindir] [,side_en])* 411093
+~PIO(READFIFO a, b, c)* 411306
+~PIO(NEXT LINE [channel])* 411509
+~PIO (FDEBUG pio) * 411868
+~PIO (FSTAT pio) * 412010
+~PIO (FLEVEL pio) * 412150
+~PIO(FLEVEL pio ,sm, DIR) dir can be RX or TX. * 412337
+~PIO(.WRAP) * 412478
+~PIO(.WRAP TARGET) * 412612
+~PIXEL( x, y)* 412898
+~PORT(start, nbr [,start, nbr]...) * 413094
+~PULSIN( pin, polarity ) or PULSIN( pin, polarity, t1 ) or PULSIN( pin, polarity, t1, t2 ) * 414080
+~RAD( degrees ) * 415216
+~RGB(red, green, blue) or  RGB(shortcut) * 415348
+~RIGHT$( string$, number-ofchars ) * 416544
+~RND( number ) or RND * 416737
+~SGN( number )  * 417109
+~SIN( number ) * 417289
+~SPACE$( number ) * 417420
+~SPI ( data ) or SPI2 ( data )  * 417573
+~SPRITE()   <- VGA AND HDMI VERSIONS ONLY* 417997
+~SPRITE(C, [#]n )   <-  VGA AND HDMI VERSIONS ONLY* 418316
+~SPRITE(C, [#]n, m)   <- VGA AND HDMI VERSIONS ONLY* 418642
+~SPRITE(D ,[#]s1, [#]s2)   <- VGA AND HDMI VERSIONS ONLY* 419229
+~SPRITE(E, [#]n   <- VGA AND HDMI VERSIONS ONLY* 419485
+~SPRITE(H,[#]n)   <- VGA AND HDMI VERSIONS ONLY* 419779
+~SPRITE(L, [#]n)   <- VGA AND HDMI VERSIONS ONLY* 420032
+~SPRITE(N)   <- VGA AND HDMI VERSIONS ONLY* 420217
+~SPRITE(N,n)   <- VGA AND HDMI VERSIONS ONLY* 420395
+~SPRITE(S)   <- VGA AND HDMI VERSIONS ONLY* 420584
+~SPRITE(V,spriteno1,spriteno 2)   <- VGA AND HDMI VERSIONS ONLY* 420983
+~SPRITE(T, [#]n)   <- VGA AND HDMI VERSIONS ONLY* 421693
+~SPRITE(V,[#]so1, [#]s2)   <- VGA AND HDMI VERSIONS ONLY* 422019
+~SPRITE(W, [#]n)   <- VGA AND HDMI VERSIONS ONLY* 422700
+~SPRITE(X, [#]n)   <- VGA AND HDMI VERSIONS ONLY* 422953
+~SPRITE(Y, [#]n)   <- VGA AND HDMI VERSIONS ONLY* 423233
+~SQR( number )   <- VGA AND HDMI VERSIONS ONLY* 423511
+~STR$( number ) or STR$( number, m ) or STR$( number, m, n ) or STR$( number, m, n, c$ ) * 423740
+~STR2BIN(type, string$ [,BIG]) * 425502
+~STRING$( nbr, ascii ) or STRING$( nbr, string$ ) * 427109
+~TAN( number ) * 427529
+~TEMPR( pin ) * 427659
+~TIME$ * 430190
+~TIMER * 430440
+~TOUCH(X) or TOUCH(Y)* 430861
+~UCASE$( string$ ) * 431094
+~VAL( string$ ) * 431226
