@@ -10,6 +10,9 @@ which removes spaces from the start and end of the input string.
 
 Help2 is a replacement for the "help" command in picomite, it has the ability to search the full_text help file
 
+![unnamed](https://github.com/user-attachments/assets/789fbb16-655c-4bbc-8545-6bdd854179e8)
+
+
 Requirements:
 - SD Card
 
